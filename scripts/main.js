@@ -23,9 +23,6 @@ function carousel(block) {
       item.style.right = `${position}px`;
     }
     ;
-  });
-
-  fwd.addEventListener('click', () => {
     dots[activeDot].style.backgroundColor = 'lightgrey';
 
     if (activeDot === 3) {
@@ -48,9 +45,6 @@ function carousel(block) {
       item.style.right = `${position}px`;
     }
     ;
-  });
-
-  rev.addEventListener('click', () => {
     dots[activeDot].style.backgroundColor = 'lightgrey';
 
     if (activeDot === 0) {
@@ -62,7 +56,7 @@ function carousel(block) {
     dots[activeDot - 1].style.backgroundColor = 'darkgrey';
     activeDot--;
   });
-}
+};
 
 carousel(
   document.querySelector('.main__wrap'),
